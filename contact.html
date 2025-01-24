@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Me - Canberk Öztonguç</title>
+    <title>About Me - Canberk Öztonguç</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -33,34 +33,75 @@
         color: #fff;
         margin-top: 20px;
       }
-      .contact-info {
+      .button {
+        display: inline-block;
+        background: #333;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
         margin-top: 20px;
-        font-size: 1.2rem;
       }
-      .contact-info p {
-        margin: 10px 0;
+      .button:hover {
+        background: #555;
+      }
+      form.form-example {
+        display: table;
+      }
+      div.form-example {
+        display: table-row;
+      }
+      label,
+      input {
+        display: table-cell;
+        margin-bottom: 10px;
+      }
+      label {
+        padding-right: 10px;
       }
     </style>
   </head>
   <body>
     <header>
-      <h1>Contact Me</h1>
+      <h1>Canberk Öztonguç</h1>
       <nav>
-        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="contact.html">Contact Me</a>
       </nav>
     </header>
     <div class="container">
-      <section class="contact-info">
-        <h2>Get in Touch</h2>
+      <section id="about">
+        <h2>About Me</h2>
         <p>
-          <strong>Email:</strong>
-          <a href="mailto:canberkoztonguc@gmail.com"
-            >canberkoztonguc@gmail.com</a
-          >
+          Hello! My name is <strong>Canberk Öztonguç</strong>. I was born on
+          <strong>May 20, 2004</strong>, in <strong>Izmir, Turkey</strong>.
         </p>
         <p>
-          <strong>Phone:</strong> <a href="tel:+46735624685">+46 735 624 685</a>
+          I graduated from <strong>Bornova Anadolu High School</strong>, and I
+          am currently pursuing my studies at
+          <strong>Jönköping University</strong>.
         </p>
+        <a href="contact.html" class="button">Contact Me</a>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Details</h2>
+        <p>Email: canberk@example.com</p>
+        <p>Phone: +46 123 456 789</p>
+
+        <h3>text</h3>
+        <form action="" method="get" class="form-example">
+          <div class="form-example">
+            <label for="name">Enter your name:</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div class="form-example">
+            <label for="email">Enter your email:</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="form-example">
+            <input type="submit" value="Subscribe!" />
+          </div>
+        </form>
       </section>
     </div>
     <footer>
